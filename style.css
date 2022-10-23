@@ -1,0 +1,30 @@
+div.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "lefter lefter . righter"
+    "footer footer footer footer";
+}
+
+div.header {
+    background-color: yellow;
+    grid-area: header;
+}
+
+div.lefter {
+    background-color: red;
+    grid-area: lefter;
+}
+
+div.righter {
+    color: white;
+    background-color: black;
+    grid-area: righter;
+}
+
+div.footer {
+    background-color: blue;
+    grid-area: footer;
+}
